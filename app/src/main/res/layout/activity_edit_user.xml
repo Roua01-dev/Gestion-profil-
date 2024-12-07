@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    >
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editTextPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pseudo"
+        android:textColor="#000000"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de téléphone"
+        android:textColor="#000000"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sauvegarder" />
+</LinearLayout>

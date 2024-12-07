@@ -1,0 +1,96 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <!-- Conteneur principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Section de l'image du contact -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/baseline_account_box_24"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- Section des informations -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Nom du contact -->
+            <TextView
+                android:id="@+id/tvNom_Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom du Contact"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Pseudo -->
+            <TextView
+                android:id="@+id/tvPseudo_Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pseudo du Contact"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
+            <!-- Numéro de téléphone -->
+            <TextView
+                android:id="@+id/tvPhone_Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numéro de Téléphone"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Actions (Appeler, Modifier, Supprimer) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageViewCall"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/baseline_call_24"
+                android:contentDescription="Appeler" />
+
+            <ImageView
+                android:id="@+id/imageViewEdit"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/edit"
+                android:contentDescription="Modifier" />
+
+            <ImageView
+                android:id="@+id/imageViewDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/delete"
+                android:contentDescription="Supprimer" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

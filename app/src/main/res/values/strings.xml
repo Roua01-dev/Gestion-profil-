@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">gestionProfil</string>
+    <string name="add_user">Ajouter un utilisateur</string>
+    <string name="enter_name">Nom</string>
+    <string name="enter_pseudo">Pseudo</string>
+    <string name="enter_phone">Téléphone</string>
+    <string name="save">Enregistrer</string>
+    <string name="title_activity_add_user">AddUserActivity</string>
+</resources>
